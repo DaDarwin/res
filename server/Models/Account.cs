@@ -1,9 +1,12 @@
 namespace res.Models;
 
-public class Account
+public class Profile : Repo_Item<string>
 {
-  public string Id { get; set; }
   public string Name { get; set; }
-  public string Email { get; set; }
   public string Picture { get; set; }
+}
+
+public class Account : Profile
+{
+  public string Email { get; set; }
 }
