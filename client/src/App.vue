@@ -7,10 +7,22 @@ import Navbar from "./components/Navbar.vue";
 	<header>
 		<Navbar />
 	</header>
-	<main>
+
+	<main class="container-fluid">
 		<router-view />
 	</main>
-	<footer class="bg-dark text-light"></footer>
+
+	<footer class="bg-dark text-light p-3">
+		<div class="w-50">
+			<a href="https://github.com/DaDarwin">
+				<i class="mdi mdi-linkedin"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/darien-jensen/">
+				<i class="mdi mdi-github"></i
+			></a>
+		</div>
+		<span class="w-50"> </span>
+	</footer>
 </template>
 
 <style lang="scss">
